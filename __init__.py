@@ -13,3 +13,49 @@ __author__ = "Sentinel Team"
 from .settings import Settings, settings, get_settings
 
 __all__ = ["Settings", "settings", "get_settings"]
+
+"""Models module initialization."""
+
+from .database import (
+    Base,
+    User,
+    Asset,
+    Event,
+    DetectionRule,
+    Alert,
+    AlertEvent,
+    AlertNote,
+    Incident,
+    IncidentTimeline,
+    IncidentResponseAction,
+    AuditLog,
+    APIKey,
+    AlertStatus,
+    IncidentStatus,
+    Severity,
+    UserRole,
+    AssetType,
+    AssetStatus,
+)
+
+__all__ = [
+    "Base",
+    "User",
+    "Asset",
+    "Event",
+    "DetectionRule",
+    "Alert",
+    "AlertEvent",
+    "AlertNote",
+    "Incident",
+    "IncidentTimeline",
+    "IncidentResponseAction",
+    "AuditLog",
+    "APIKey",
+    "AlertStatus",
+    "IncidentStatus",
+    "Severity",
+    "UserRole",
+    "AssetType",
+    "AssetStatus",
+]
